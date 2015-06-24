@@ -1,0 +1,7 @@
+exclude:
+  languages
+
+mapping:
+  "Christopher Boelter <christopher@boelter.eu>":
+    - "Christopher Boelter <c.boelter@revision6.de>"
+    - "cboelter <christopher@boelter.eu>"

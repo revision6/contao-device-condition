@@ -1,0 +1,61 @@
+{
+  "name": "revision6/contao-device-condition",
+  "description": "Contao Device Condition",
+  "keywords": [
+    "contao",
+    "device condition",
+    "device"
+  ],
+  "type": "contao-module",
+  "homepage": "https://revision6.de",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Christopher Bölter",
+      "email": "c.boelter@revision6.de",
+      "homepage": "https://revision6.de",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "shout@revision6.de",
+    "issues": "https://github.com/revision6/contao-device-condition/issues",
+    "source": "https://github.com/revision6/contao-device-condition"
+  },
+  "require": {
+    "php": ">=5.4",
+    "contao/core": ">3.4.3,<4.0",
+    "contao-community-alliance/composer-plugin": "~2.0",
+    "contao-community-alliance/dependency-container": "~1.8",
+    "mobiledetect/mobiledetectlib": "~2.8"
+  },
+  "require-dev": {
+    "cyberspectrum/contao-toolbox": "~0.6",
+    "phpcq/all-tasks": "~1.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Revision6": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "Revision\\Test": "tests"
+    }
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "contao": "system/modules/z_device-condition"
+      }
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://legacy-packages-via.contao-community-alliance.org/"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

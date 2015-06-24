@@ -1,2 +1,2 @@
-# contao-device-condition
-Device Conditions for contao elements
+# contao-ce-device-condition
+Content Element device conditions
