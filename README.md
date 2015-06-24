@@ -4,3 +4,6 @@
 
 # contao-ce-device-condition
 Content Element device conditions
+
+
+Einige Icons von [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/ "Yusuke Kamiyamane"). Lizensiert unter einer [Creative Commons Namensnennung 3.0 Lizenz](http://creativecommons.org/licenses/by/3.0/deed.de "Creative Commons Namensnennung 3.0 Lizenz").
