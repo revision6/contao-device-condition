@@ -19,6 +19,7 @@ foreach ($GLOBALS['TL_DCA']['tl_module']['palettes'] as $palette => $config) {
     }
 }
 
+// Operations
 $GLOBALS['TL_DCA']['tl_module']['list']['operations']['device_condition']['button_callback'] =
     array('Revision6\DeviceCondition\Backend\ListView', 'generateDeviceConditionConfiguration');
 
