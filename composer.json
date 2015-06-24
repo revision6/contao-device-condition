@@ -50,12 +50,6 @@
       }
     }
   },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://legacy-packages-via.contao-community-alliance.org/"
-    }
-  ],
   "minimum-stability": "dev",
   "prefer-stable": true
 }
