@@ -15,6 +15,9 @@
 // Palettes
 $GLOBALS['TL_DCA']['tl_article']['palettes']['default'] .= ';{device_condition_legend},device_condition';
 
+$GLOBALS['TL_DCA']['tl_article']['list']['operations']['device_condition']['button_callback'] =
+    array('Revision6\DeviceCondition\Backend\ListView', 'generateDeviceConditionConfiguration');
+
 // Fields
 $GLOBALS['TL_DCA']['tl_article']['fields']['device_condition'] = array(
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['device_condition'],

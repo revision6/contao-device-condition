@@ -13,4 +13,4 @@
  */
 
 // Hooks
-$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('Revision6\DeviceCondition\HandleCondition', 'applyDeviceCondition');
+$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('Revision6\DeviceCondition\Condition\HandleCondition', 'applyDeviceCondition');
