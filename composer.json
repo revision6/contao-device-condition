@@ -40,7 +40,7 @@
   },
   "autoload-dev": {
     "psr-0": {
-      "Revision\\Test": "tests"
+      "Revision6\\Test": "tests"
     }
   },
   "extra": {
