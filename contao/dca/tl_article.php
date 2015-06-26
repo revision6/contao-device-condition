@@ -7,7 +7,7 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */
@@ -24,7 +24,7 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['device_condition'] = array(
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['device_condition'],
     'exclude'   => true,
     'inputType' => 'checkbox',
-    'options'   => array('desktop', 'tablet', 'mobile'),
+    'options'   => array('desktop', 'mobile'),
     'reference' => &$GLOBALS['TL_LANG']['tl_article']['device_condition'],
     'eval'      => array(
         'tl_class' => 'w50 clr',

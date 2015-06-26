@@ -7,7 +7,7 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */
@@ -17,9 +17,8 @@ $GLOBALS['TL_LANG']['tl_article']['device_condition_legend'] = 'Geräte-Bedinung
 
 // Fields
 $GLOBALS['TL_LANG']['tl_article']['device_condition'] =
-    array('Geräte-Bedinungen', 'Hier können Sie festlegen auf welchen Geräten dieser Artikel angezeigt werden soll.');
+    array('Geräte-Bedinungen', 'Hier können Sie festlegen auf welchen Gerätegrößen dieser Artikel angezeigt werden soll.');
 
 // References
-$GLOBALS['TL_LANG']['tl_article']['device_condition']['desktop'] = 'Desktop / Comoputer';
-$GLOBALS['TL_LANG']['tl_article']['device_condition']['tablet']  = 'Tablet';
-$GLOBALS['TL_LANG']['tl_article']['device_condition']['mobile']  = 'Mobile / Handy';
+$GLOBALS['TL_LANG']['tl_article']['device_condition']['desktop'] = 'Desktop';
+$GLOBALS['TL_LANG']['tl_article']['device_condition']['mobile']  = 'Smartphone';

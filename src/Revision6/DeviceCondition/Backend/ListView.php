@@ -7,7 +7,7 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */
@@ -34,7 +34,7 @@ class ListView
     public function generateDeviceConditionConfiguration($row)
     {
         $conditions    = deserialize($row['device_condition']);
-        $allConditions = array('desktop', 'tablet', 'mobile');
+        $allConditions = array('desktop', 'mobile');
         $return        = '';
 
         Controller::loadLanguageFile('default');

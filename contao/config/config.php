@@ -7,10 +7,11 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */
 
 // Hooks
-$GLOBALS['TL_HOOKS']['isVisibleElement'][] = array('Revision6\DeviceCondition\Condition\HandleCondition', 'applyDeviceCondition');
+$GLOBALS['TL_HOOKS']['isVisibleElement'][] =
+    array('Revision6\DeviceCondition\Condition\HandleCondition', 'applyDeviceCondition');

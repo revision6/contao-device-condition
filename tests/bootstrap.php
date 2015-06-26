@@ -7,7 +7,7 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */

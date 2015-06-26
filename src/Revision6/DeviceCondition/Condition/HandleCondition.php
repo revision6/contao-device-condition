@@ -7,7 +7,7 @@
  *
  * @package    DeviceCondition
  * @author     Christopher Boelter <c.boelter@revision6.de>
- * @copyright  Revision6 UG
+ * @copyright  revision6 GmbH
  * @license    LGPL.
  * @filesource
  */
@@ -44,7 +44,7 @@ class HandleCondition
 
             $mobileDetect = $this->getMobileDetectionService();
             foreach ($conditions as $condition) {
-                $this->handleDeviceCondition($mobileDetect, $condition);
+                $isVisible = $this->handleDeviceCondition($mobileDetect, $condition);
             }
         }
 
@@ -62,13 +62,7 @@ class HandleCondition
     private function handleDeviceCondition($mobileDetect, $condition)
     {
         if ($condition == 'desktop') {
-            if (!$mobileDetect->isTablet() && !$mobileDetect->isMobile()) {
-                return true;
-            }
-        }
-
-        if ($condition == 'tablet') {
-            if ($mobileDetect->isTablet()) {
+            if (!$mobileDetect->isMobile()) {
                 return true;
             }
         }
