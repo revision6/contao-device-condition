@@ -13,11 +13,7 @@
  */
 
 // Palettes
-foreach ($GLOBALS['TL_DCA']['tl_module']['palettes'] as $palette => $config) {
-    if ($palette != '__selector__') {
-        $GLOBALS['TL_DCA']['tl_module']['palettes'][$palette] .= ';{device_condition_legend},device_condition';
-    }
-}
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendModulePalettes');
 
 // Operations
 $GLOBALS['TL_DCA']['tl_module']['list']['operations']['device_condition']['button_callback'] =

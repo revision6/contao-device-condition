@@ -12,12 +12,8 @@
  * @filesource
  */
 
-// Palettes
-foreach ($GLOBALS['TL_DCA']['tl_content']['palettes'] as $palette => $config) {
-    if ($palette != '__selector__') {
-        $GLOBALS['TL_DCA']['tl_content']['palettes'][$palette] .= ';{device_condition_legend},device_condition';
-    }
-}
+// Callbacks
+$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendContentPalettes');
 
 // Operations
 $GLOBALS['TL_DCA']['tl_content']['list']['operations']['device_condition']['button_callback'] =
