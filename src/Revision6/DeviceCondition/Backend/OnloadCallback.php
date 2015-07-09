@@ -23,6 +23,8 @@ class OnloadCallback
 {
     /**
      * Append all current content palettes with the device-condition field.
+     *
+     * @return void
      */
     public function appendContentPalettes()
     {
@@ -31,6 +33,8 @@ class OnloadCallback
 
     /**
      * Append all current module palettes with the device-condition field.
+     *
+     * @return void
      */
     public function appendModulePalettes()
     {
@@ -40,11 +44,13 @@ class OnloadCallback
     /**
      * Append all current palettes with the device-condition field.
      *
+     * @return void
+     *
      * @SuppressWarnings(PHPMD.Superglobals)
      */
     public function appendPalettes()
     {
-        foreach ($GLOBALS['TL_DCA']['tl_content']['palettes'] as $palette => $config) {
+        foreach (array_keys($GLOBALS['TL_DCA']['tl_content']['palettes']) as $palette) {
             if ($palette != '__selector__') {
                 $GLOBALS['TL_DCA']['tl_content']['palettes'][$palette] .= ';{device_condition_legend},device_condition';
             }
