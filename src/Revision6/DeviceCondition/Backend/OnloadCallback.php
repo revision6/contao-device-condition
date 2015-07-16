@@ -50,6 +50,10 @@ class OnloadCallback
      */
     public function appendPalettes()
     {
+        if (!is_array($GLOBALS['TL_DCA']['tl_content']['palettes'])) {
+            return;
+        }
+
         foreach (array_keys($GLOBALS['TL_DCA']['tl_content']['palettes']) as $palette) {
             if ($palette != '__selector__') {
                 $GLOBALS['TL_DCA']['tl_content']['palettes'][$palette] .= ';{device_condition_legend},device_condition';
