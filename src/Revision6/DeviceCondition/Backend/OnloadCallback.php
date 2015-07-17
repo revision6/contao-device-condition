@@ -54,6 +54,8 @@ class OnloadCallback
     /**
      * Append all current palettes with the device-condition field.
      *
+     * @param string $table The current table.
+     *
      * @return void
      *
      * @SuppressWarnings(PHPMD.Superglobals)
