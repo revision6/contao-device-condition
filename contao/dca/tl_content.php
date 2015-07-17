@@ -13,7 +13,8 @@
  */
 
 // Callbacks
-$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendContentPalettes');
+$GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] =
+    array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendContentPalettes');
 
 // Operations
 $GLOBALS['TL_DCA']['tl_content']['list']['operations']['device_condition']['button_callback'] =

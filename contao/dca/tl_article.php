@@ -13,7 +13,8 @@
  */
 
 // Palettes
-$GLOBALS['TL_DCA']['tl_article']['palettes']['default'] .= ';{device_condition_legend},device_condition';
+$GLOBALS['TL_DCA']['tl_article']['config']['onload_callback'][] =
+    array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendArticlePalettes');
 
 // Operations
 $GLOBALS['TL_DCA']['tl_article']['list']['operations']['device_condition']['button_callback'] =

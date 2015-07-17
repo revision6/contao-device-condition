@@ -40,7 +40,6 @@ class ListView
         Controller::loadLanguageFile('default');
 
         if (!$conditions) {
-
             foreach ($allConditions as $condition) {
                 $return .= Image::getHtml(
                     '/system/modules/z_device-condition/assets/icons/' . $condition . '.png',

@@ -22,13 +22,23 @@ namespace Revision6\DeviceCondition\Backend;
 class OnloadCallback
 {
     /**
+     * Append all current article palettes with the device-condition field.
+     *
+     * @return void
+     */
+    public function appendArticlePalettes()
+    {
+        $this->appendPalettes('tl_article');
+    }
+
+    /**
      * Append all current content palettes with the device-condition field.
      *
      * @return void
      */
     public function appendContentPalettes()
     {
-        $this->appendPalettes();
+        $this->appendPalettes('tl_content');
     }
 
     /**
@@ -38,7 +48,7 @@ class OnloadCallback
      */
     public function appendModulePalettes()
     {
-        $this->appendPalettes();
+        $this->appendPalettes('tl_module');
     }
 
     /**
@@ -48,15 +58,15 @@ class OnloadCallback
      *
      * @SuppressWarnings(PHPMD.Superglobals)
      */
-    public function appendPalettes()
+    public function appendPalettes($table)
     {
-        if (!is_array($GLOBALS['TL_DCA']['tl_content']['palettes'])) {
+        if (!is_array($GLOBALS['TL_DCA'][$table]['palettes'])) {
             return;
         }
 
-        foreach (array_keys($GLOBALS['TL_DCA']['tl_content']['palettes']) as $palette) {
+        foreach (array_keys($GLOBALS['TL_DCA'][$table]['palettes']) as $palette) {
             if ($palette != '__selector__') {
-                $GLOBALS['TL_DCA']['tl_content']['palettes'][$palette] .= ';{device_condition_legend},device_condition';
+                $GLOBALS['TL_DCA'][$table]['palettes'][$palette] .= ';{device_condition_legend},device_condition';
             }
         }
     }

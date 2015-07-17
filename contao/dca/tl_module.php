@@ -13,7 +13,8 @@
  */
 
 // Palettes
-$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] = array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendModulePalettes');
+$GLOBALS['TL_DCA']['tl_module']['config']['onload_callback'][] =
+    array('Revision6\DeviceCondition\Backend\OnloadCallback', 'appendModulePalettes');
 
 // Operations
 $GLOBALS['TL_DCA']['tl_module']['list']['operations']['device_condition']['button_callback'] =
