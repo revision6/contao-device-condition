@@ -14,6 +14,8 @@
 
 namespace Revision6\DeviceCondition\Backend;
 
+use Contao\Input;
+
 /**
  * Class OnloadCallback to handle the palette appending.
  *
@@ -62,7 +64,11 @@ class OnloadCallback
      */
     public function appendPalettes($table)
     {
-        if (!is_array($GLOBALS['TL_DCA'][$table]['palettes'])) {
+        if (!is_array($GLOBALS['TL_DCA'][$table]['palettes'])
+            || (!Input::get('do') == 'article'
+                || !Input::get('do') == 'postmanager'
+                || Input::get('task') == 'indexmanager')
+        ) {
             return;
         }
 

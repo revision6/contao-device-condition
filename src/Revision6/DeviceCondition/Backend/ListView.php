@@ -16,6 +16,7 @@ namespace Revision6\DeviceCondition\Backend;
 
 use Contao\Controller;
 use Contao\Image;
+use Contao\Input;
 
 /**
  * Class ListView to handle the image display in the list views.
@@ -33,6 +34,13 @@ class ListView
      */
     public function generateDeviceConditionConfiguration($row)
     {
+        if (!Input::get('do') == 'article'
+            || !Input::get('do') == 'postmanager'
+            || Input::get('task') == 'indexmanager'
+        ) {
+            return;
+        }
+
         $conditions    = deserialize($row['device_condition']);
         $allConditions = array('desktop', 'mobile');
         $return        = '';
