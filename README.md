@@ -3,7 +3,4 @@
 [![Contao Community Alliance coding standard](http://img.shields.io/badge/cca-coding_standard-red.svg?style=flat-square)](https://github.com/contao-community-alliance/coding-standard)
 
 # contao-ce-device-condition
-Content Element device conditions
-
-
-Einige Icons von [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/ "Yusuke Kamiyamane"). Lizensiert unter einer [Creative Commons Namensnennung 3.0 Lizenz](http://creativecommons.org/licenses/by/3.0/deed.de "Creative Commons Namensnennung 3.0 Lizenz").
+https://confluence.swmh.de/display/VMIT/contao-ce-device-condition
